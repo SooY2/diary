@@ -1,0 +1,88 @@
+.weekly_header{
+    height: 40px;
+    
+}
+
+.weekly_main{
+    margin-left: 20px;
+    width:960px; height:460px ;
+    
+}
+
+.weekly_days{
+    display: flex;    
+    height: 30px;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;
+    
+}
+
+.weekly_day {
+    width: calc(960px / 7);
+    text-align: center;
+    border-left: 1px solid #333333;
+    font-weight: bold;
+  }
+  .checklists{
+      display: flex;
+      height: 430px;
+      border-left: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      border-top: 1px solid #333333;
+      margin-bottom: 5px;
+  }
+  .checklist{
+      width: calc(960px/7);
+      border-right: 1px solid #333333;
+  }
+
+  .checkplus{
+    width: 25px; height: 25px;
+    font-size: 15px;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color:antiquewhite;
+
+    position:relative;
+    top: 5px; left: 5px;
+    margin-bottom: 5px;
+  }
+  .diarybtns{
+      display: flex;
+  }
+  .diarybtn{
+    width: calc(940px/7);
+    position: relative;
+    
+      
+      
+  }
+
+  .weekly_nav{
+    float: right;
+    margin-right: 100px;
+    margin-top: 7px;
+  }
+
+  .todolabels{
+    display: flex;
+    margin: 20px;
+  }
+
+  .todolabel{
+    width: calc(960px / 2);
+   text-align: center;
+  }
+
+  .todo{
+      
+      width:950px; 
+  }
+  
+  .subtodo{
+      width: 450px; height: 150px;
+      /*overflow: scroll;*/
+      background-color: aliceblue;
+      float:left;
+      margin: 10px;
+  }
