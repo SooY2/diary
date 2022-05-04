@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dear my diary</title>
+
+        <meta charset="UTF-8">
+        <meta content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="인증게시판.css">
+        <link rel="stylesheet" href="../mainpage.css">
+		<link rel="stylesheet" href="../calendar.css">
+        
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">	        
+    </head>
+
+
+    <body>   
+        <header>
+            <img src="../imgs/로고.png">
+        </header>
+
+        <div id="mp"> 
+            <div id = "lp">
+                <settings-cal>
+                    <div class="container">
+                        <div class="calendar">
+                            <div class="month">
+                                <b class="go-prevmonth">&lt</b>
+                                <div class="date">
+                                    <h1></h1>
+                                    <p></p>
+                                </div>
+                                <b class="go-nextmonth">&gt</b>
+                            </div><!--month-->
+                            <div class="weekdays">
+                                <div>일</div>
+                                <div>월</div>
+                                <div>화</div>
+                                <div>수</div>
+                                <div>목</div>
+                                <div>금</div>
+                                <div>토</div>
+                            </div>
+                            <div class="days">
+                                
+                            </div>
+                        </div>
+                    </div>
+            
+                    <script src="../calendar.js"></script>                        
+                </settings-cal>                
+                
+                <a href="../diary_page/diarypage_table.html" class="list"><img src="../imgs/diary1.png"></a>
+                <a href="../plan_page/plan.html" class="list"><img src="../imgs/plan1.png" ></a>
+                <a href="../memo_page/memo.html" class="list"><img src="../imgs/memo1.png"></a>
+                <a href="#" class="list"><img src="../imgs/board1.png"></a>
+                <a href="../profile_page/profile.html" class="list"><img src="../imgs/profile1.png"></a>
+
+                </div>
+            
+            <div>
+                <span id = "rp">
+                    <h1 class="text-center font-big">인증게시판</h1>
+                    <div class="boardlist">
+                        <p>▶전체게시판</p> <br>
+                        <p>▶목표인증</p><br>
+                        <p>▶To Do List인증</p><br>
+                        <p>▶기상인증</p><br>
+                        <p>▶운동인증</p><br>
+                        <p>▶독서인증</p><br>
+                    </div>
+                    <div class="mainboard">
+                        <table class="boardtable" >
+                            <thead>
+                                <th id="tabletitle">제목</th>
+                                <th class="tableinfo">작성자</th>
+                                <th class="tableinfo">날짜</th>
+                                <th class="tableinfo">조회</th>
+                            </thead>
+                            <tbody id="tablebody">
+                                <td>[기상인증] 6시 기상! </td>
+                                <td>정지환</td>
+                                <td>2022.04.28</td>
+                                <td>15</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </span>
+
+                
+                <span id = "bookmark">
+                    <div  class="hidden" >
+                        <div class="bookmarker" style="background-color: #FA5858;">diary</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #FAAC58;">plan</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #E5D85C;">memo</div>
+                    </div>
+                    <div>
+                        <div class="bookmarker" style="background-color: #B1DB4E;">board</div>
+                    </div>
+                    <div class="hidden">
+                        <div class="bookmarker" style="background-color: #79ABFF;">profile</div>
+                    </div>
+                    
+                    
+                </span>
+            </div>
+
+        </div>
+
+</html>
