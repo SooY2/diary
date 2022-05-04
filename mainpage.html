@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <title>dear my diary</title>
+    <head>
+        <title>dear my diary</title>
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="mainpage.css">
-    <link rel="stylesheet" href="calendar.css">
+        <meta charset="UTF-8">
+        <meta content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="mainpage.css">
+        <link rel="stylesheet" href="calendar.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">	        
+    </head>
+    
 
     <body>
         <header>
-            <img src="diary_img/로고.png">
+            <img src="imgs/로고.png">
         </header>
 
         <div id="mp"> 
             <div id = "lp">
-                <div class="cal">
                     <settings-cal>
-                        <div class="cal_header"></div>
-                        <div class="cal_main">
-                            <div class="cal_days">
-                                <div class="cal_day">일</div>
-                                <div class="cal_day">월</div>
-                                <div class="cal_day">화</div>
-                                <div class="cal_day">수</div>
-                                <div class="cal_day">목</div>
-                                <div class="cal_day">금</div>
-                                <div class="cal_day">토</div>
-                            </div><!--cal_days-->
-                            <div class="cal_dates"></div>
-                        </div><!--cal_main-->
-                    </settings-cal>
-                </div>
+                        <div class="container">
+                            <div class="calendar">
+                                <div class="month">
+                                    <b class="go-prevmonth">&lt</b>
+                                    <div class="date">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+                                    <b class="go-nextmonth">&gt</b>
+                                </div><!--month-->
+                                <div class="weekdays">
+                                    <div>일</div>
+                                    <div>월</div>
+                                    <div>화</div>
+                                    <div>수</div>
+                                    <div>목</div>
+                                    <div>금</div>
+                                    <div>토</div>
+                                </div>
+                                <div class="days">
+                                    
+                                </div>
+                            </div>
+                        </div>
                 
-                <button class="list"><img src="diary1.png" onclick="alert('diary')"></button>
-                <button class="list"><img src="./plan1.png" ></button>
-                <button class="list"><img src="diary_img/memo1.png"></button>
-                <button class="list"><img src="diary_img/board1.png"></button>
-                <button class="list"><img src="diary_img/profile1.png"></button>
+                        <script src="calendar.js"></script>                        
+                    </settings-cal>
+                
+                
+                <button class="list"><img src="imgs/diary1.png" onclick="alert('diary')"></button>
+                <button class="list"><img src="imgs/plan1.png" ></button>
+                <button class="list"><img src="imgs/memo1.png"></button>
+                <button class="list"><img src="imgs/board1.png"></button>
+                <button class="list"><img src="imgs/profile1.png"></button>
 
                 </div>
             

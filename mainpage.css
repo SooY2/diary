@@ -1,30 +1,23 @@
 body {
-    background-image: url("쿼카.jpg");
+    background-image: url("imgs/쿼카.jpg");
     margin: 0px;
-
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
     #mp{
-         width:1500px; height: 720px;
-         
-        margin-left: 30px;
+         width:100%; height: 100%;
+        margin-left: 3rem;
         }
     #lp {
-        width: 370px; height: 720px;
-                
+        width: 45rem; height: 100%;
         float:left;
+        position: absolute;
+        padding-right: 3rem;
     }
 
-     .cal {
-        margin-top: 10px;
-        margin-bottom: 80px;
-               
-        width: 340px; height: 300px;
-                
-    }
 
     .list{
         margin-top: 30px;
@@ -36,24 +29,26 @@ body {
    
 
     #rp {
-        width: 1030px; height: 720px;
-                
-        background-color: black ;
+        width: 130rem; height: 90rem;
+        position: absolute;     
+        margin-left: 45rem;
+        background-color: white ;
         float:left;
         border-radius: 30px;
         box-shadow: 5px 2px 10px #585858;
-                
+        overflow: hidden;       
     }
     #bookmark{
-        width: 100px; height: 950px;
-                
+        width: 13rem; height: 950px;
+        margin-left: 175rem;
+        position: absolute;  
         float:left;
     }
     .bookmarker{
-        width: 80px; height: 120px;
-        margin-right: 55px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        width: 10rem; height: 15rem;
+        margin-right: 7rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
         float:right;
         border-radius: 41px;
         writing-mode: vertical-rl; 
@@ -62,10 +57,10 @@ body {
         line-height: 3.5em;
         font-style: italic;
         color: aliceblue;
-                
+        font-size: 1.8rem;
     }
     .hidden{
-        width: 100px;  
+        width: 13rem;  
         float:right;
         overflow: hidden;
     }
