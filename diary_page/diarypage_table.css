@@ -55,7 +55,8 @@ table {
 .checklist {
     height: 50rem;
     width: calc(120rem/7);
-    word-break:break-all
+    word-break:break-all;
+    overflow : scroll;
 }
 
 
