@@ -24,7 +24,8 @@ body {
         margin-left: 25px;
         width: 290px; height: 30px;
         background-color: transparent;
-        border: 0;     
+        border: 0;
+        cursor: pointer;
     }
    
 
