@@ -5,22 +5,31 @@
 
         <meta charset="UTF-8">
         <meta content="width=device-width", initial-scale="1.0">
-        <link rel="stylesheet" href="memo.CSS">
-        <link rel="stylesheet" href="../mainpage.css">
-		<link rel="stylesheet" href="../calendar.css">
+        <link rel="stylesheet" href="./CSS3/memo.CSS">
+        <link rel="stylesheet" href="./CSS3/mainpage.css">
+		<link rel="stylesheet" href="./CSS3/calendar.css">   
+        <link rel="stylesheet" href="./CSS3/font.css"> 
 
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">	        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.navitem').each(function(index){
+                    $(this).attr('navItem-index', index);
+                }).click(function(){
+                    var index = $(this).attr('navItem-index');
+                    $('.navItem[navItem-index=' + index + ']').addClass('clicked_navItem');
+                    $('.menu[menu-index!=' + index + ']').removeClass('clicked_navItem');
+                });
+            });
+        </script>
+       
     </head>
-
 
     <body>   
         <header>
-            <img src="../imgs/로고.png">
+            <img src="./Image/로고.png">
         </header>
 
+        <!--calendar-->
         <div id="mp"> 
             <div id = "lp">
                 <settings-cal>
@@ -49,97 +58,78 @@
                         </div>
                     </div>
             
-                    <script src="../calendar.js"></script>                        
+                    <script src="./JS/calendar.js"></script>                        
                 </settings-cal>                
                 
-                <a href="../diary_page/diarypage_table.html" class="list"><img src="../imgs/diary1.png"></a>
-                <a href="../plan_page/plan.html" class="list"><img src="../imgs/plan1.png" ></a>
-                <a href="#" class="list"><img src="../imgs/memo1.png"></a>
-                <a href="../board_page/인증게시판.html" class="list"><img src="../imgs/board1.png"></a>
-                <a href="../profile_page/profile.html" class="list"><img src="../imgs/profile1.png"></a>
+                <a href="./diarypage_table.html" class="list"><img src="./Image/diary1.png"></a>
+                <a href="./plan.html" class="list"><img src="./Image/plan1.png" ></a>
+                <a href="#" class="list"><img src="./Image/memo1.png"></a>
+                <a href="./인증게시판.html" class="list"><img src="./Image/board1.png"></a>
+                <a href="./profile.html" class="list"><img src="./Image/profile1.png"></a>
 
                 </div>
             
+                <!--memo-->
             <div>
                 <span id = "rp">
                     <div id = "memo">
                         <div id ="memo_container">
-                            <ul id = "memo_list">
-                                <li> 
-                                    <h4>+</h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4>▶폴더1</h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4>▶폴더2</h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4>▶폴더3</h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4>▶폴더4</h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4>▶폴더5</h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <img src="../imgs/icon_arrow.png">
-                                </li>
-                            </ul>
+                                <nav class="menu">
+                                    <div class="navrow">
+                                    <div class="plus"><button>+</button></div>
+                                    </div>
+                                    <div class="navrow">
+                                    <div class="navItem">폴더 1</div>
+                                    </div>
+                                    <div class="navrow">
+                                    <div class="navItem">폴더 2</div>
+                                    </div>
+                                    <div class="navrow">
+                                    <div class="navItem">폴더 3</div>
+                                    </div>
+                                    <div class="navrow">
+                                    <div class="navItem">폴더 4</div>
+                                    </div>
+                                    <div class="navrow">
+                                    <div class="navItem">폴더 5</div>
+                                    </div>
+                                    <div></div>
+                                </nav>    
     
-                            <span id = "memo_header">
-                                <textarea id = "title" cols = "88" rows = "4" placeholder = "제목">
-                                </textarea>
-                            </span>
+                            <div id = "memo_header">
+                                <textarea id = "title" cols = "65" rows = "3" placeholder = "제목" onfocus="this.placeholder = ''" onblur="this.placeholder = '제목'" ></textarea>
+                            </div>
     
-                            <span id = "memo_body">
-                                <textarea id = "text" cols = "88" rows = "40">
-    
-                                </textarea>
-                            </span>
+                            <div id = "memo_body">
+                                <textarea id = "text" cols = "65" rows = "23" placeholder="내용" onfocus="this.placeholder = ''" onblur="this.placeholder = '내용'"></textarea>
+                            </div>
                         </div>
                     </div>
-                    
-                </span>
-
-                
-                <span id = "bookmark">
-                    <div  class="hidden">
-                        <div class="bookmarker" style="background-color: #FA5858;">diary</div>
-                    </div>
-                    <div class="hidden">
-                        <div class="bookmarker" style="background-color: #FAAC58;">plan</div>
-                    </div>
-                    <div>
-                        <div class="bookmarker" style="background-color: #E5D85C;">memo</div>
-                    </div>
-                    <div class="hidden">
-                        <div class="bookmarker" style="background-color: #B1DB4E;">board</div>
-                    </div>
-                    <div class="hidden">
-                        <div class="bookmarker" style="background-color: #79ABFF;">profile</div>
-                    </div>
-                    
-                    
-                </span>
+                </span>        
             </div>
-
+                    
+                       
+                
+            <span id = "bookmark">
+                <div  class="hidden">
+                    <div class="bookmarker" style="background-color: #FA5858;">diary</div>
+                </div>
+                <div class="hidden">
+                    <div class="bookmarker" style="background-color: #FAAC58;">plan</div>
+                </div>
+                <div>
+                    <div class="bookmarker" style="background-color: #E5D85C;">memo</div>
+                </div>
+                <div class="hidden">
+                    <div class="bookmarker" style="background-color: #B1DB4E;">board</div>
+                </div>
+                <div class="hidden">
+                    <div class="bookmarker" style="background-color: #79ABFF;">profile</div>
+                </div> 
+            </span>
+            </div>
         </div>
-
+        
+        
+     
 </html>
