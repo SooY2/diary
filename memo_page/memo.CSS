@@ -1,140 +1,117 @@
-#memo_list{
-    width : 240px;
-    height:640px;
-    flex: 1;
-    background-color : #ced4da;
-    list-style : none;
-    margin: 24px;
-    margin-bottom: 24px;
-    padding: 12px 0px;
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-}
-/*#dee2e6;*/
-.memo_header{
-    position:relative;
-   
-    
-}
 #title{
-    position:relative;
-    margin-top:24px;
-    margin-left:320px;
+    position: absolute;
+    top:88px;
+    margin-left:316px;
     background-color:#ced4da;
     border : none;
+    border-radius: 16px;
+    font-family: "jua";
 }
-/*
-textarea::placeholder{
-    color : red;
-    font-weight:bold;
-}
-*/
 
 #text{
-    position:relative;
-    margin-top:24px;
-    margin-left:320px;
+    position: absolute;
+    bottom: 56px;
+    margin-left:316px;
     background-color:#ced4da;
     border : none;
+    border-radius: 16px;
+    font-family: "jua";
 }
-#memo_list li{
-    flex: 1;
+
+textarea::placeholder{
     text-align: center;
-    vertical-align : center;
-    color:silver;
-    position:relative;
-    border-bottom: 2px solid black;
+    margin-top: 24px;
 }
 
-#memo_list h4{
-    text-align: left;
-    color:black;
-}
-#memo_list img { 
-    top:50%; 
-    transform:translateY(-50%);
-    right:0px; 
-    width:16px;
-    height:16px;
-    filter: opacity(0.4) drop-shadow(0 0 0 black); 
-    position:absolute;
-}
+nav {
+    display: table; 
+    background-color: #ccc;
+    vertical-align: middle; 
+    text-align: center;
+    border-spacing: 10px;
+  }
 
-#memo_list{
-    list-style: none;
-    padding-left:0px;
+  .clicked_navItem{
+      color:aqua;
+  }
+  .menu { 
+      width: 200px;
+      height: 640px;
+      border-radius: 16px;
+      margin-top: 40px;
+      margin-left: 64px;
 }
-
-#memo_list li:last-child {
-    border-bottom: none;
+  .navItem {
+    display: table-cell;/*<td>요소처럼 표현*/
+    width: 100px;
+    height: 30px; 
+    background-color: beige;
+    border-radius: 8px;
+    font-family: "jua";
+  }
+  .navrow {
+    display: table-row;/*<tr>요소처럼 표현*/
+  }
+  .plus { 
+      display: table-cell; 
+      height: 24px; 
+      text-align: left;
 }
-
 
 body {
     background-image: url("../imgs/쿼카.jpg");
-    /*경로 입력시, 현재 문서위치 기준으로!*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-    #mp{
-         width:1500px; height: 720px;
-         
-        margin-left: 30px;
-        }
-    #lp {
-        width: 370px; height: 720px;
-                
-        float:left;
+#mp{
+    width:1500px; 
+    height: 720px;
+    margin-left: 30px;
     }
 
-     .cal {
-        margin-top: 10px;
-        margin-bottom: 80px;
-               
-        width: 340px; height: 300px;
-                
-    }
+#lp {
+    width: 370px; 
+    height: 720px;
+    float:left;
+}
 
-    .list{
-        margin-top: 30px;
-        margin-left: 25px;
-        width: 290px; height: 30px;
-        background-color: transparent;
-        border: 0;     
-    }
-   
+    .cal {
+    margin-top: 10px;
+    margin-bottom: 80px;       
+    width: 340px; 
+    height: 300px;
+}
 
-    #rp {
-        width: 1030px; height: 720px;
-                
-        background-color: white;
-        float:left;
-        border-radius: 30px;
-        box-shadow: 5px 2px 10px #585858;
-                
-    }
-    #bookmark{
-        width: 100px; height: 950px;
-                
-        float:left;
-    }
-    .bookmarker{
-        width: 80px; height: 120px;
-        margin-right: 55px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        float:right;
-        border-radius: 41px;
-                
-    }
-    .hidden{
-        width: 100px;  
-        float:right;
-        overflow: hidden;
-    }
+#rp {
+    width: 1030px; height: 20px;
+            
+    background-color: white;
+    float:left;
+    border-radius: 30px;
+    box-shadow: 5px 2px 10px #585858;           
+}
 
+#bookmark{
+    width: 100px; height: 950px;
+            
+    float:left;
+}
+
+.bookmarker{
+    width: 80px; height: 120px;
+    margin-right: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float:right;
+    border-radius: 41px;       
+}
+
+.hidden{
+    width: 100px;  
+    float:right;
+    overflow: hidden;
+}
 
 
