@@ -115,3 +115,7 @@ textarea{
     resize:none;
     overflow:scroll;
 }
+
+::-webkit-scrollbar {
+display: none;
+}
