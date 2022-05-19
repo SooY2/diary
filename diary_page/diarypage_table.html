@@ -5,8 +5,8 @@
 
         <meta charset="UTF-8">
         <meta content="width=device-width", initial-scale="1.0">
-        <link rel="stylesheet" href="../mainpage.css">
-		<link rel="stylesheet" href="../calendar.css">
+        <link rel="stylesheet" href="mainpage.css">
+		<link rel="stylesheet" href="calendar.css">
         <link rel="stylesheet" href="diarypage_table.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 
     <body>   
         <header>
-            <img src="../imgs/로고.png">
+            <img src="imgs/로고.png">
         </header>
 
         <div id="mp"> 
@@ -48,26 +48,26 @@
                         </div>
                     </div>
             
-                    <script src="../calendar.js"></script>                        
+                    <script src="calendar.js"></script>                        
                 </settings-cal>                
                 
-                <a href="../diary_page/diarypage_table.html" class="list"><img src="../imgs/diary1.png"></a>
-                <a href="../plan_page/plan.html" class="list"><img src="../imgs/plan1.png" ></a>
-                <a href="../memo_page/memo.html" class="list"><img src="../imgs/memo1.png"></a>
-                <a href="../board_page/인증게시판.html" class="list"><img src="../imgs/board1.png"></a>
-                <a href="../profile_page/profile.html" class="list"><img src="../imgs/profile1.png"></a>
+                <button class="list"><img src="imgs/diary1.png" onclick="alert('diary')"></button>
+                <button class="list"><img src="imgs/plan1.png" ></button>
+                <button class="list"><img src="imgs/memo1.png"></button>
+                <button class="list"><img src="imgs/board1.png"></button>
+                <button class="list"><img src="imgs/profile1.png"></button>
 
                 </div>
             
-            <div>
-                <span id = "rp">
+            
+                <div id = "rp">
                     <div class="weekly_header">
                         <div class="weekly_nav">
-                            <b>&lt;</b>
-                            <div>
-                                <p>2022년 5월 4일 수요일<p>
-                            </div>                            
-                            <b class="go-nextweek bgc">&gt;</b>
+                            <b class="go-prevweek">&lt</b>
+                            <div class="date2">
+                                <p></p>
+                            </div>
+                            <b class="go-nextweek">&gt</b>
                         </div>   
                     </div>
 
@@ -75,108 +75,47 @@
                         <table border="1">
                             <thead>
                                 <tr class="weekly_days">
+                                    <th class="weekly_day">일</th>
                                     <th class="weekly_day">월</th>
                                     <th class="weekly_day">화</th>
                                     <th class="weekly_day">수</th>
                                     <th class="weekly_day">목</th>
                                     <th class="weekly_day">금</th>
                                     <th class="weekly_day">토</th>
-                                    <th class="weekly_day">일</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="checklist"><!--월-->
-                                        <div class="wh100" id="mon">
-                                            <button class="checkplus" onclick="newBox('mon')">+</button>
+                                <tr class="todolist">
+                                    <!--
+                                    <td class="checklist">
+                                        <div class="wh100">
+                                            <button class="checkplus">+</button>
 
-                                            <div id="diary">
-                                                <label for="dia">일기장</label>
-                                                <textarea id="dia" class="dia"></textarea>
-                                                <button onclick="hide()">닫기</button>
-                                            </div>
-        
                                         </div></td>
 
-                                    <td class="checklist">
-                                        <div class="wh100" id="tue" >
-                                        <button class="checkplus" onclick="newBox('tue')">+</button>
-
-                                        <div id="diary1">
-                                            <label for="dia">일기장</label>
-                                            <textarea id="dia" class="dia"></textarea>
-                                            <button onclick="hide1()">닫기</button>
-                                        </div>
-                                    </div></td>
-
-                                    <td class="checklist">
-                                        <div class="wh100" id="wed">
-                                        <button class="checkplus" onclick="newBox('wed')">+</button>
-
-                                        <div id="diary2">
-                                            <label for="dia">일기장</label>
-                                            <textarea id="dia" class="dia"></textarea>
-                                            <button onclick="hide2()">닫기</button>
-                                        </div>
-                                    </div></td>
-
-                                    <td class="checklist">
-                                        <div class="wh100" id="thu">
-                                        <button class="checkplus" onclick="newBox('thu')">+</button>
-
-                                        <div id="diary3">
-                                            <label for="dia">일기장</label>
-                                            <textarea id="dia" class="dia"></textarea>
-                                            <button onclick="hide3()">닫기</button>
-                                        </div>
-                                        </div></td>
-
-                                    <td class="checklist">
-                                        <div class="wh100" id="fri">
-                                        <button class="checkplus" onclick="newBox('fri')">+</button>
-
-                                        <div id="diary4">
-                                            <label for="dia">일기장</label>
-                                            <textarea id="dia" class="dia"></textarea>
-                                            <button onclick="hide4()">닫기</button>
-                                        </div>
-                                        </div></td>
-
-                                    <td class="checklist">
-                                        <div class="wh100" id="sat">
-                                        <button class="checkplus" onclick="newBox('sat')">+</button>
-
-                                        <div id="diary5">
-                                            <label for="dia">일기장</label>
-                                            <textarea id="dia" class="dia"></textarea>
-                                            <button onclick="hide5()">닫기</button>
-                                        </div>
-                                        </div></td>
-
-                                    <td class="checklist">
-                                        <div class="wh100" id="sun">
-                                        <button class="checkplus" onclick="newBox('sun')">+</button>
-
-                                        <div id="diary6">
-                                            <label for="dia">일기장</label>
-                                            <textarea id="dia" class="dia"></textarea>
-                                            <button onclick="hide6()">닫기</button>
-                                        </div>
-                                        </div></td>
+                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
+                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
+                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
+                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
+                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
+                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
                                     
                                 </tr>
-                                <tr>
-                                    <td><button class="diarybtn wh100" onclick="show()">diary</button></td>
-                                    <td><button class="diarybtn wh100" onclick="show1()">diary</button></td>
-                                    <td><button class="diarybtn wh100" onclick="show2()">diary</button></td>
-                                    <td><button class="diarybtn wh100" onclick="show3()">diary</button></td>
-                                    <td><button class="diarybtn wh100" onclick="show4()">diary</button></td>
-                                    <td><button class="diarybtn wh100" onclick="show5()">diary</button></td>
-                                    <td><button class="diarybtn wh100" onclick="show6()">diary</button></td>
-                                    
+                            -->
+                                <tr class="diarys">
+                                    <!--
+                                    <td><button class="diarybtn wh100">diary</button></td>
+                                    <td><button class="diarybtn wh100">diary</button></td>
+                                    <td ><button class="diarybtn wh100">diary</button></td>
+                                    <td ><button class="diarybtn wh100">diary</button></td>
+                                    <td ><button class="diarybtn wh100">diary</button></td>
+                                    <td ><button class="diarybtn wh100">diary</button></td>
+                                    <td ><button class="diarybtn wh100">diary</button></td>
+                                    -->
                                 </tr>
-                                <script src="diary.js"></script>
                             </tbody>
+                            
                         </table>
 
                         <br>
@@ -195,11 +134,12 @@
                             
                     </div>
 
-                    
-                </span>
+                    <script src="diarypage.js"></script>    
+                </div>
+                
 
                 
-                <span id = "bookmark">
+                <div id = "bookmark">
                     <div >
                         <div class="bookmarker" style="background-color: #FA5858;">diary</div>
                     </div>
@@ -217,9 +157,10 @@
                     </div>
                     
                     
-                </span>
-            </div>
+                </div>
+            
 
         </div>
 
+    </body>
 </html>
