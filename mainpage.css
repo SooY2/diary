@@ -24,7 +24,7 @@ body {
 
 
     .list{
-        margin-top: 90px;
+        margin-top: 30px;
         margin-left: 25px; 
         width: 290px; height: 30px;
         background-color: transparent;
@@ -68,6 +68,10 @@ body {
         float:right;
         overflow: hidden;
     }
+
+.list > img {
+    margin-top: 50px;
+}
 
     
 
