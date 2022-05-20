@@ -24,12 +24,13 @@ body {
 
 
     .list{
-        margin-top: 30px;
+        margin-top: 90px;
         margin-left: 25px; 
         width: 290px; height: 30px;
         background-color: transparent;
         border: 0;
         cursor: pointer; 
+        
     }
    
 
