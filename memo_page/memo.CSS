@@ -1,3 +1,4 @@
+/*menu*/
 *{
     padding: 0;
     margin: 0;
@@ -53,11 +54,6 @@ a{
     transition-duration: 1s;
 }
 
-
-
-
-
-
 /*memo_header*/
 textarea{
     border-radius: 10px;
@@ -88,9 +84,6 @@ table{
     width: 64px;
     height: 24px;
 }
-
-
-
 
 #mp{
     width:1500px;
