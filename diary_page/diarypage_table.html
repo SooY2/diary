@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr">
     <head>
         <title>dear my diary</title>
 
         <meta charset="UTF-8">
         <meta content="width=device-width", initial-scale="1.0">
-        <link rel="stylesheet" href="../mainpage.css">
-		<link rel="stylesheet" href="../calendar.css">
+        <link rel="stylesheet" href="mainpage.css">
+		<link rel="stylesheet" href="calendar.css">
         <link rel="stylesheet" href="diarypage_table.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">	        
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+
+        	        
     </head>
 
 
     <body>   
         <header>
-            <img src="../imgs/로고.png">
+            <img src="imgs/로고.png">
         </header>
 
         <div id="mp"> 
@@ -48,14 +51,14 @@
                         </div>
                     </div>
             
-                    <script src="../calendar.js"></script>                        
+                    <script src="calendar.js"></script>                        
                 </settings-cal>                
                 
-                <a href="#" class="list"><img src="../imgs/diary1.png"></a>
-                <a href="../plan_page/plan.html" class="list"><img src="../imgs/plan1.png" ></a>
-                <a href="../memo_page/memo.html" class="list"><img src="../imgs/memo1.png"></a>
-                <a href="../board_page/인증게시판.html" class="list"><img src="../imgs/board1.png"></a>
-                <a href="../profile_page/profile.html" class="list"><img src="../imgs/profile1.png"></a>
+                <button class="list"><img src="imgs/diary1.png" onclick="alert('diary')"></button>
+                <button class="list"><img src="imgs/plan1.png" ></button>
+                <button class="list"><img src="imgs/memo1.png"></button>
+                <button class="list"><img src="imgs/board1.png"></button>
+                <button class="list"><img src="imgs/profile1.png"></button>
 
                 </div>
             
@@ -86,32 +89,18 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="todolist">
-                                    <!--
-                                    <td class="checklist">
-                                        <div class="wh100">
-                                            <button class="checkplus">+</button>
+                                <tr class="todolist" id="calendar">
 
-                                        </div></td>
-
-                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
-                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
-                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
-                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
-                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
-                                    <td class="checklist"><div class="wh100"><button class="checkplus">+</button></div></td>
-                                    
                                 </tr>
-                            -->
+                                <form>
+                                    <tr class="todo" ></tr>
+                                </form>
+                                
+                                   
                                 <tr class="diarys">
                                     <!--
                                     <td><button class="diarybtn wh100">diary</button></td>
-                                    <td><button class="diarybtn wh100">diary</button></td>
-                                    <td ><button class="diarybtn wh100">diary</button></td>
-                                    <td ><button class="diarybtn wh100">diary</button></td>
-                                    <td ><button class="diarybtn wh100">diary</button></td>
-                                    <td ><button class="diarybtn wh100">diary</button></td>
-                                    <td ><button class="diarybtn wh100">diary</button></td>
+                                    
                                     -->
                                 </tr>
                             </tbody>
@@ -120,21 +109,30 @@
 
                         <br>
 
-                        <table >
-                            <tr>
-                                <td ><b>매일 할 일</b></td>
-                                <td ><b>할 일</b></td>
-                            </tr>
-                            <tr>
-                                <td  class="todolabel"><textarea  class="subtodo"></textarea></td>
-                                <td  class="todolabel"><textarea  class="subtodo"></textarea></td>
-                            </tr>
-                        </table>
+                        
+
+
+                            
+                                <div><b>매일 할 일</b></div>
+                                <br>
+                            
+                                <td  class="todolabel">
+                                    <div>
+                                        <form class="todo-form">
+                                            <input type="text" class="todo-input" placeholder="매일 할 일을 입력하세요">
+                                            <button type="submit" class="add-button todolabelplus">+</button>
+                                          </form>
+                                        <ul class="todo-items">
+                                            
+                                          </ul>
+                                    </div>
+                                                                       
                                 
+                        <script src="todoplan.js"></script>       
                             
                     </div>
 
-                    <script src="diarypage.js"></script>    
+                       
                 </div>
                 
 
@@ -161,6 +159,10 @@
             
 
         </div>
-
+        <!--
+        <script src="diarypage.js" defer></script>
+        --> 
+        <script src="todo.js"></script>
+        
     </body>
 </html>
