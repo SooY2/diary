@@ -1,111 +1,144 @@
-#title{
-    position: absolute;
-    top:88px;
-    margin-left:316px;
-    background-color:#ced4da;
-    border : none;
-    border-radius: 16px;
-    font-family: "jua";
+*{
+    padding: 0;
+    margin: 0;
 }
 
-#text{
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu{
+    width: 240px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left:40px;
     position: absolute;
-    bottom: 56px;
-    margin-left:316px;
-    background-color:#ced4da;
-    border : none;
-    border-radius: 16px;
-    font-family: "jua";
+    border-radius: 7px;
+}
+
+.menu > li{
+    width: 80%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fde2c9;
+}
+
+.menu > a{
+    color: #fff;
+}
+
+.submenu > li{
+    line-height: 50px;
+    background-color: antiquewhite;
+}
+
+.submenu{
+    height: 0;
+    overflow: hidden;
+}
+
+.menu > li:hover{
+    background-color: antiquewhite;
+    transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu{
+    height: 250px;
+    transition-duration: 1s;
+}
+
+
+
+
+
+
+/*memo_header*/
+textarea{
+    border-radius: 10px;
+    border: none;
+}
+#title{
+    background-color: antiquewhite;
 }
 
 textarea::placeholder{
+    color: #d3d3d3;
+    font-weight: bold;
     text-align: center;
-    margin-top: 24px;
 }
 
-nav {
-    display: table; 
-    background-color: #ccc;
-    vertical-align: middle; 
-    text-align: center;
-    border-spacing: 10px;
-  }
-
-  .clicked_navItem{
-      color:aqua;
-  }
-  .menu { 
-      width: 200px;
-      height: 640px;
-      border-radius: 16px;
-      margin-top: 40px;
-      margin-left: 64px;
-}
-  .navItem {
-    display: table-cell;/*<td>요소처럼 표현*/
-    width: 100px;
-    height: 30px; 
-    background-color: beige;
-    border-radius: 8px;
-    font-family: "jua";
-  }
-  .navrow {
-    display: table-row;/*<tr>요소처럼 표현*/
-  }
-  .plus { 
-      display: table-cell; 
-      height: 24px; 
-      text-align: left;
+#content{
+    background-color: antiquewhite;
 }
 
-body {
-    background-image: url("../imgs/쿼카.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+table{
+    margin-top: 40px;
+    margin-right: 40px;
 }
+
+#save{
+    position: relative;
+    float: right;
+    width: 64px;
+    height: 24px;
+}
+
+
+
 
 #mp{
-    width:1500px; 
-    height: 720px;
+    width:1500px;
+    height: 720px;  
     margin-left: 30px;
-    }
-
+}
 #lp {
-    width: 370px; 
+    width: 370px;
     height: 720px;
     float:left;
 }
 
-    .cal {
+.cal {
     margin-top: 10px;
-    margin-bottom: 80px;       
+    margin-bottom: 80px;   
     width: 340px; 
-    height: 300px;
+    height: 300px;       
 }
 
+.list{
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 290px; height: 30px;
+    background-color: transparent;
+    border: 0;     
+}
+
+
 #rp {
-    width: 1030px; height: 20px;
-            
+    width: 1030px;
+    height: 720px;       
     background-color: white;
     float:left;
     border-radius: 30px;
-    box-shadow: 5px 2px 10px #585858;           
+    box-shadow: 5px 2px 10px #585858;       
 }
-
 #bookmark{
-    width: 100px; height: 950px;
-            
+    width: 100px;
+    height: 950px;
     float:left;
 }
-
 .bookmarker{
     width: 80px; height: 120px;
     margin-right: 55px;
     margin-top: 10px;
     margin-bottom: 10px;
     float:right;
-    border-radius: 41px;       
+    border-radius: 41px;   
 }
 
 .hidden{
@@ -113,5 +146,4 @@ body {
     float:right;
     overflow: hidden;
 }
-
 
